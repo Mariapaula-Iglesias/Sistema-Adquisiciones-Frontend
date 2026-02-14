@@ -1,0 +1,113 @@
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  padding: 20px;
+}
+
+.success-box {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  margin: 0 auto 20px;
+}
+
+.success-box h1 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.success-box p {
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+.acquisition-id {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+}
+
+.acquisition-id strong {
+  color: #667eea;
+}
+
+.success-actions {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.success-actions button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.new-acquisition-btn {
+  background-color: #667eea;
+  color: white;
+}
+
+.new-acquisition-btn:hover {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.view-all-btn {
+  background-color: #f0f0f0;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.view-all-btn:hover {
+  background-color: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .success-box {
+    padding: 30px 20px;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+  }
+
+  .success-box h1 {
+    font-size: 24px;
+  }
+}

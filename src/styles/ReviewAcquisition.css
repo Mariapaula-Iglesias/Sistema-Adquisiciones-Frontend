@@ -1,0 +1,246 @@
+.review-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.review-header {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-header h1 {
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.review-header p {
+  color: #666;
+  margin: 0;
+}
+
+.review-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.review-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.review-section:last-child {
+  border-bottom: none;
+}
+
+.review-section h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #667eea;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-item label {
+  display: block;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.info-item p {
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+  word-break: break-word;
+}
+
+.info-full {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-full label {
+  display: block;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.info-full p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.unspsc-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unspsc-list li {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border-left: 4px solid #667eea;
+}
+
+.unspsc-list strong {
+  color: #667eea;
+  font-size: 18px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.value-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.value-item.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.value-item.highlight label {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.value-item.highlight .value {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.value-item label {
+  display: block;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.value-item .value {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.value-item .value.total {
+  font-size: 24px;
+}
+
+.review-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-actions button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.edit-btn:hover:not(:disabled) {
+  background-color: #ffb300;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+}
+
+.confirm-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.confirm-btn:hover:not(:disabled) {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.confirm-btn:disabled,
+.edit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .review-container {
+    padding: 10px;
+  }
+
+  .review-content {
+    padding: 15px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-actions {
+    flex-direction: column;
+  }
+
+  .review-actions button {
+    width: 100%;
+  }
+}
